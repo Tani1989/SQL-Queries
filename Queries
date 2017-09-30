@@ -1,0 +1,19 @@
+// Select 2nd highest salary
+select * from yourtable;
+
+select min(tb1.salary) from 
+(select top 2 * from yourtable order by salary desc) as tb1
+
+select top 2 * from yourtable order by salary desc;
+
+
+// Select 2nd highest salary
+select * from  
+(SELECT ROW_NUMBER() OVER (Order by salary desc) AS RowNum, 
+*
+FROM yourtable) as sa  where sa.rowNum = 2
+
+
+
+
+
