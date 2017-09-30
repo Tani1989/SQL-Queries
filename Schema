@@ -1,0 +1,14 @@
+-- borrowed from https://stackoverflow.com/a/15742881/808921
+
+CREATE TABLE yourtable
+	([ID] int, [User] varchar(5), [admin] varchar(8), [accounts] varchar(8),[sales] varchar(8),[finance] varchar(8))
+;
+	
+INSERT INTO yourtable
+	([ID], [User], [admin], [accounts],[sales],[finance])
+VALUES
+	(1, 'User1', 1000, 2000,3000,5000),
+	(2, 'User1', 4000, 2000,4000,1000),
+	(3, 'User2', 5000, 3000, 2000,4000),
+	(4, 'User3', 500, 6000,3200, 2200)
+;
